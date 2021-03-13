@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Class Lesson</title>
+</head>
+<body>
+    <div class="container mt-5"> <!--mt is margintop scale of 1 to 5-->
+        <div class="row justify-content-center"> <!--Only md devices will center if you put md-->
+            <div class="col-md-6 col-10 text-center just"> <!--Bootstrap text align-->
+                <div class="alert alert-danger mb-4 d-none" id="alert-prompt" role="alert">
+                </div>
+                <h2>To Do List:</h2> 
+                <p>This is a to-do list.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center"> <!--This will justify for all sizes-->
+            <div class="col-md-6 col-10"> <!--Bootstrap media size control if no md xs or other size, that will be the default used.-->
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="item-input" placeholder="Task Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-success" type="button" id="add-item">Add Task</button>
+                </div>
+            </div>
+        </div>   
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-7">
+                <p class="task">Sample task 1</p>
+            </div>
+            <div class="col-md-2 col-3 text-end">
+                <i class="bi bi-check-circle text-success icon-enlarge"></i>
+                <i class="bi bi-x-circle text-danger icon-enlarge"></i>
+            </div>
+        </div>
+        <div class="row justify-content-center"> <!--This will justify for all sizes-->
+            <div class="col-md-2 col-7 text-center"> <!--Bootstrap media size control if no md xs or other size, that will be the default used.-->
+                    <button class="btn btn-outline-danger btn-lg" type="button" id="clear-list">Clear All</button>
+            </div>
+        </div>   
+    </div>
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
